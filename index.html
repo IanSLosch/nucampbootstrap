@@ -23,11 +23,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
-                    <div class="col">
-                        <h1>NuCamp</h1>
-                        <h2>a better way to camp</h2>
-                    </div>
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+                <div class="col col-md-4 col-2-xl mt-4">
+                <a href="#reserveForm" class="btn btn-info btn-lg">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -66,18 +69,23 @@
             </div>
         </div>
 
-        <div class="row" class="row row-content align-items-center">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React
-                    Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React
+                            Lake is a favorite for fly fishers.</p>
+                    </div>
+                        <img src="img/react-lake-thumb.jpg" class="d-flex ml-3 img-thumbnail" alt="Responsive image">
+                </div>
             </div>
         </div>
 
-        <div class="row" class="row row-content align-items-center">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-">
                 <h2 text-sm-right>Our Community Partners</h2>
             </div>
@@ -91,9 +99,45 @@
                 </div>
             </div>
         </div>
+        <div class="row row-content">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label class="col col-sm-6 col-form-label" for="">Number of Campers</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col">
+                                <input type="date" id="date" name="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
